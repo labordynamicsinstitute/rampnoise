@@ -13,11 +13,11 @@ names(employment) <- c("Count")
 
 This fake employment distribution looks like this (actually, real employment is different):
 
-![](rampdist_files/figure-html/unnamed-chunk-3-1.png) 
+![](rampdist_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
 or for a closeup:
 
-![](rampdist_files/figure-html/unnamed-chunk-4-1.png) 
+![](rampdist_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
 but most importantly, it has a \textbf{mean of 3879}, a \textbf{median of 215}, and \textbf{Q25 of 15}.
 
@@ -92,8 +92,8 @@ invcramp <- function(y,a,b) {
 		maximum of $d$ percent. This produces a random noise factor centered around 1 with
 		distortion of at least $c$ and at most $d$ percent.
 		
-![](rampdist_files/figure-html/plot_ramp-1.png) 
-![](rampdist_files/figure-html/plot_cum_ramp-1.png) 
+![](rampdist_files/figure-html/plot_ramp-1.png)<!-- -->
+![](rampdist_files/figure-html/plot_cum_ramp-1.png)<!-- -->
 
 # Distorting the data
 
@@ -107,10 +107,10 @@ employment$NoisyCount <- round(employment$Count * employment$fuzzfactor,0)
 
 If we compare the original data 
 
-![](rampdist_files/figure-html/unnamed-chunk-6-1.png) 
+![](rampdist_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
 
 against the protected data
 
-![](rampdist_files/figure-html/unnamed-chunk-7-1.png) 
+![](rampdist_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
 we see very similar distributions. The user can verify that the univariate statistics are very similar: the raw data has a mean of 3878.9 against a mean of  3860.2  in the protected data.
