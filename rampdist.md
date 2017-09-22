@@ -25,7 +25,7 @@ but most importantly, it has a \textbf{mean of 3879}, a \textbf{median of 215}, 
 The most common noise distribution used is a ramp distribution.
 So what is a ramp distribution?
 $$
-	p\left( {\delta _{j}}\right) =\left\{ {{
+	p\left( {\delta _{j}}\right) =\left\{
 			\begin{array}{ccl} 
 			\dfrac{ {1+ b - \delta } }{\left( {b - a} \right)^2}
 					&,&\;\delta \in \mbox{ }\left[ {1+a,1+b} \right] \\ 
@@ -33,11 +33,11 @@ $$
 				&,&\;\delta \in \left[ {1 - b,1 - a} \right] \\ 
 				0&,&\;\mbox{ otherwise } \\
 				 \end{array}
-		}}\right. 
+		\right. 
 $$
 with a cumulative distribution of
 $$
-		F\left( {\delta _{j}}\right) =\left\{ {{
+		F\left( {\delta _{j}}\right) =\left\{ 
 				\begin{array}{*{20}c}
 				{\mbox{0},\;\delta < {2-b} } \\ 
 				{{\left[ {\left( {\delta - (1-b)} \right)^2} \right]} 
@@ -48,7 +48,8 @@ $$
 				  {\left/ {\vphantom {{\left[ {\left( {b - a} \right)^2 - \left( {1+b - \delta } \right)^2} \right]}
 				  {\left[ {2\left( {b - a} \right)^2} \right]}}} \right. } {\left[ {2\left( {b - a} \right)^2} \right]},\;\delta \in \mbox{ }\left[ {1+a,1+b} \right]\mbox{ 
 					}} \\ 
-					{\mbox{1}, \;\delta > {1+b} } \\ \end{array}}}\right. 
+					{\mbox{1}, \;\delta > {1+b} } \\ \end{array}
+					\right. 
 $$
 		
 
