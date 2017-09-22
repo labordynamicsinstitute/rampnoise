@@ -173,18 +173,33 @@ $(document).ready(function () {
         \right. 
 \]</span> with a cumulative distribution of <span class="math display">\[
         F\left( {\delta _{j}}\right) =\left\{ 
-                \begin{array}{*{20}c}
+            \begin{array}{*{20}c}
                 {\mbox{0},\;\delta &lt; {2-b} } \\ 
-                {{\left[ {\left( {\delta - (1-b)} \right)^2} \right]} 
-                  {\left/ {\vphantom {{\left[ {\left( {\delta - (1-b)} \right)^2} \right]} 
-                  {\left[ {2\left( {b - a} \right)^2} \right]}}} \right. } {\left[ {2\left( {b - a} \right)^2} \right]},\;\delta \in \left[ {1 - b,1 - a} \right]\mbox{ }} \\
-                  {\mbox{0.5}, \;\delta \in \mbox{ }\left( {1-a,1+a} \right)\mbox{ }} \\
-                  {\mbox{0.5} + {\left[ {\left( {b - a} \right)^2 - \left( {1+b - \delta } \right)^2} \right]}
-                  {\left/ {\vphantom {{\left[ {\left( {b - a} \right)^2 - \left( {1+b - \delta } \right)^2} \right]}
-                  {\left[ {2\left( {b - a} \right)^2} \right]}}} \right. } {\left[ {2\left( {b - a} \right)^2} \right]},\;\delta \in \mbox{ }\left[ {1+a,1+b} \right]\mbox{ 
-                    }} \\ 
-                    {\mbox{1}, \;\delta &gt; {1+b} } \\ \end{array}
+                { 
+                  {\left[ {\left( {\delta - (1-b)} \right)^2} \right]} 
+                  {\left/ {\vphantom { 
+                                {\left[ {\left( {\delta - (1-b)} \right)^2} \right]} 
+                                {\left[ {2\left( {b - a} \right)^2} \right]} 
+                                     } 
+                          } 
                     \right. 
+                  } 
+                  {\left[ {2\left( {b - a} \right)^2} \right]},\;\delta \in \left[ {1 - b,1 - a} \right]\mbox{ } 
+                } \\
+                {\mbox{0.5}, \;\delta \in \mbox{ }\left( {1-a,1+a} \right)\mbox{ } } \\
+                {\mbox{0.5} + 
+                  {\left[ {\left( {b - a} \right)^2 - \left( {1+b - \delta } \right)^2} \right]}
+                  {\left/ {\vphantom {
+                              {\left[ {\left( {b - a} \right)^2 - \left( {1+b - \delta } \right)^2} \right]}
+                              {\left[ {2\left( {b - a} \right)^2} \right]} } 
+                          } \right. 
+                  } 
+                  {\left[ {2\left( {b - a} \right)^2} \right]},
+                  \;\delta \in \mbox{ }\left[ {1+a,1+b} \right]\mbox{ }
+                } \\ 
+                {\mbox{1}, \;\delta &gt; {1+b} } \\ 
+            \end{array}
+            \right. 
 \]</span></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dramp &lt;-<span class="st"> </span>function(x,a,b) {
   if ( b&lt;<span class="st"> </span>a) {
