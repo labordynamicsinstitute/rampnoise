@@ -4,6 +4,11 @@ Lars Vilhuber
 
 First proposed by [Evans, Zayatz and Slanta (1998)](http://www.jos.nu/Articles/abstract.asp?article=144537), multiplicative input noise infusion (henceforth simply "noise infusion") is used as a disclosure-avoidance measure. See also [our implementation](https://ideas.repec.org/h/nbr/nberch/0485.html) in the [Quarterly Workforce Indicators](http://lehd.ces.census.gov/data) (published in 2009, but first implemented in 2003).
 
+This repository illustrates noise infusion with some toy data. 
+Please feel free [to fork it](https://github.com/larsvilhuber/rampnoise/) and play with it.
+
+# Creating toy data
+
 Let's generate some random data:
 
 ```r
@@ -19,7 +24,7 @@ or for a closeup:
 
 ![](rampdist_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
-but most importantly, it has a \textbf{mean of 3879}, a \textbf{median of 215}, and \textbf{Q25 of 15}.
+but most importantly, it has a **mean of 3879**, a **median of 215**, and **Q25 of 15**.
 
 # Ramp distribution
 The most common noise distribution used is a ramp distribution.
@@ -129,4 +134,4 @@ against the protected data
 
 ![](rampdist_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
-we see very similar distributions. The user can verify that the univariate statistics are very similar: the raw data has a mean of 3878.9 against a mean of  3860.2  in the protected data.
+we see very similar distributions. The user can verify that the univariate statistics are very similar: the raw data has a **mean of 3878.9** against a **mean of  3860.2**  in the protected data (a difference of 0.483%).

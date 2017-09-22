@@ -17,6 +17,11 @@ size <- 10000
 
 First proposed by [Evans, Zayatz and Slanta (1998)](http://www.jos.nu/Articles/abstract.asp?article=144537), multiplicative input noise infusion (henceforth simply "noise infusion") is used as a disclosure-avoidance measure. See also [our implementation](https://ideas.repec.org/h/nbr/nberch/0485.html) in the [Quarterly Workforce Indicators](http://lehd.ces.census.gov/data) (published in 2009, but first implemented in 2003).
 
+This repository illustrates noise infusion with some toy data. 
+Please feel free [to fork it](https://github.com/larsvilhuber/rampnoise/) and play with it.
+
+# Creating toy data
+
 Let's generate some random data:
 ```{r}
 employment <- round(as.data.frame(exp(runif(size,log(1),log(42000)))))
@@ -35,7 +40,7 @@ or for a closeup:
 hist(employment[ which(employment$Count < 1000),],breaks = size/100)
 ```
 
-but most importantly, it has a \textbf{mean of `r round(mean(employment$Count),0.1)`}, a \textbf{median of `r median(employment$Count)`}, and \textbf{Q25 of `r quantile(employment$Count,0.25)`}.
+but most importantly, it has a **mean of `r round(mean(employment$Count),0.1)`**, a **median of `r median(employment$Count)`**, and **Q25 of `r quantile(employment$Count,0.25)`**.
 
 # Ramp distribution
 The most common noise distribution used is a ramp distribution.
@@ -184,4 +189,4 @@ against the protected data
 hist(employment[ which(employment$NoisyCount < 1000),c("NoisyCount")],breaks = size/100)
 ```
 
-we see very similar distributions. The user can verify that the univariate statistics are very similar: the raw data has a mean of `r round(mean(employment$Count),1)` against a mean of  `r round(mean(employment$NoisyCount),1)`  in the protected data.
+we see very similar distributions. The user can verify that the univariate statistics are very similar: the raw data has a **mean of `r round(mean(employment$Count),1)`** against a **mean of  `r round(mean(employment$NoisyCount),1)`**  in the protected data (a difference of `r abs(round(100*(mean(employment$Count) -mean(employment$NoisyCount))/mean(employment$Count),3))`%).
