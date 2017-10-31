@@ -114,7 +114,15 @@ invcramp <- function(y,a,b) {
 		distortion of at least $c$ and at most $d$ percent.
 		
 ![](rampdist_files/figure-html/plot_ramp-1.png)<!-- -->
+
+```
+## Saving 7 x 5 in image
+```
 ![](rampdist_files/figure-html/plot_cum_ramp-1.png)<!-- -->
+
+```
+## Saving 7 x 5 in image
+```
 
 # Distorting the data
 

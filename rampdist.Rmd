@@ -142,9 +142,11 @@ myplot <- ggplot(w,aes(x=y,y=z)) +
           panel.background = element_blank()
           )+
   scale_x_continuous(breaks=c(0.75,0.9,1,1.1,1.25),labels=c("1-b","1-a",1,"1+a","1+b"))+
+  theme(axis.text.y = element_blank())+
   xlab("")+
   ylab("")
 myplot
+ggsave("rampdist.png")
 ```
 ```{r plot_cum_ramp, echo=FALSE}
 y=seq(0,1,by = 0.001)
@@ -162,10 +164,11 @@ myplot <- ggplot(w,aes(x=x,y=y)) +
   scale_x_continuous(breaks=c(0.75,0.9,1,1.1,1.25),
                      labels=c("1-b","1-a",1,"1+a","1+b"),
                      )+
+  theme(axis.text.y = element_blank())+
   xlab("")+
   ylab("")
 myplot
-
+ggsave("rampdist_cum.png")
 ```
 
 # Distorting the data
