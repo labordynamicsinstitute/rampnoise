@@ -1,6 +1,6 @@
 # Multiplicative noise infusion
 
-[![DOI](https://zenodo.org/badge/114281032.svg)](https://zenodo.org/badge/latestdoi/114281032)
+[![DOI](https://zenodo.org/badge/1116351.svg)](10.5281/zenodo.1116351)
 
 First proposed by [Evans, Zayatz and Slanta (1998)](http://www.jos.nu/Articles/abstract.asp?article=144537), multiplicative input noise infusion (henceforth simply "noise infusion") is used as a disclosure-avoidance measure. See also [our implementation](https://ideas.repec.org/h/nbr/nberch/0485.html) in the [Quarterly Workforce Indicators](http://lehd.ces.census.gov/data) (published in 2009, but first implemented in 2003).
 
