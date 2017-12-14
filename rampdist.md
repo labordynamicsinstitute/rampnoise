@@ -142,4 +142,4 @@ against the protected data
 
 ![](rampdist_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
 
-we see very similar distributions. The user can verify that the univariate statistics are very similar: the raw data has a **mean of 3878.9** against a **mean of  3860.2**  in the protected data (a difference of 0.483%).
+we see very similar distributions. The user can verify that the univariate statistics are very similar: the raw data has a **mean of 3878.9** against a **mean of  3860.2**  in the protected data (a difference of 0.483%). The relevant quantiles are a **median of 208.5**, and **Q25 of 15**.

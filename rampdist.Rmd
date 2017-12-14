@@ -192,4 +192,4 @@ against the protected data
 hist(employment[ which(employment$NoisyCount < 1000),c("NoisyCount")],breaks = size/100)
 ```
 
-we see very similar distributions. The user can verify that the univariate statistics are very similar: the raw data has a **mean of `r round(mean(employment$Count),1)`** against a **mean of  `r round(mean(employment$NoisyCount),1)`**  in the protected data (a difference of `r abs(round(100*(mean(employment$Count) -mean(employment$NoisyCount))/mean(employment$Count),3))`%).
+we see very similar distributions. The user can verify that the univariate statistics are very similar: the raw data has a **mean of `r round(mean(employment$Count),1)`** against a **mean of  `r round(mean(employment$NoisyCount),1)`**  in the protected data (a difference of `r abs(round(100*(mean(employment$Count) -mean(employment$NoisyCount))/mean(employment$Count),3))`%). The relevant quantiles are a **median of `r median(employment$NoisyCount)`**, and **Q25 of `r quantile(employment$NoisyCount,0.25)`**.

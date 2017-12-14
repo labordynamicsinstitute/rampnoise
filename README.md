@@ -4,7 +4,7 @@ First proposed by [Evans, Zayatz and Slanta (1998)](http://www.jos.nu/Articles/a
 
 This repository illustrates noise infusion with some toy data. 
 
-See the [rampdist.md](rampdist.md) file, or go to the HTML version at [larsvilhuber.github.io/rampnoise/rampnoise.html](https://larsvilhuber.github.io/rampnoise/rampnoise.html).
+See the [rampdist.md](rampdist.md) file, or go to the HTML version at [larsvilhuber.github.io/rampnoise/rampdist.html](https://larsvilhuber.github.io/rampnoise/rampdist.html).
 
 Please feel free to fork it and play with it.
 
